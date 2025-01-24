@@ -260,6 +260,7 @@
     right: 0;
 }
 
+
 .button.transparent:hover {
     background-color: var(--color-white);
 }
@@ -270,4 +271,151 @@
 
 .motivation-card-image {
     margin-block: -60px;
+}
+
+
+/* ____________________________________________________________________________ */
+
+
+.training-types {
+    max-width: 1920px;
+    margin-inline: auto;
+    padding-top: 70px;
+    padding-bottom: 120px;
+    position: relative;
+
+    background-color: var(--color-black);
+}
+
+.training-types-list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 60px;
+}
+
+.training-types-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 35px;
+    padding-top: 80px;
+
+    background: url(../Img/Section-3/arrow-svg.svg) 100% 0/80px no-repeat;
+    background-image: 100%;
+
+    background-repeat: no-repeat;
+}
+
+.trainig-types-img {
+    height: 140px;
+}
+
+.training-types-item-title {
+    font-size: 16px;
+}
+
+/* ____________________________________________________________________________ */
+
+.join-us-video-wrapper {
+    background: url(../Img/Section-4/section-join-us-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--color-dark-alternate);
+    padding: 150px 30px;
+
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    column-gap: 5px;
+}
+
+.join-us-video-play-button {
+    position: absolute;
+    /*top: 50%;
+    left: 50%;
+    translate: -50% -50%; */
+    width: 200px;
+    aspect-ratio: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: var(--border);
+    border-radius: 50%;
+
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--color-white);
+    text-transform: uppercase;
+}
+
+.join-us-video-play-button::after {
+    content: '';
+    width: 26px;
+    aspect-ratio: 1;
+    background: url(../Img/Icon/arrow-button.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.join-us-video-play-button:hover::after {
+    filter: invert(1);
+}
+
+.join-us-video-play-button:hover {
+    background-color: rgba(122, 122, 122, 0.253);
+    color: var(--color-black);
+}
+
+.join-us-video {
+    width: 960px;
+    height: 600px;
+}
+
+.join-us-title {
+    position: relative;
+    font-size: clamp(65px, 9.37vw, 180px);
+    line-height: 1;
+    text-align: center;
+    margin-top: -0.4em;
+    margin-bottom: 130px;
+}
+
+.join-us-title::after {
+    content: '';
+    display: inline-block;
+    height: 0.7em;
+    aspect-ratio: 1;
+    background: url(../Img/Section-4/arrow-svg.svg) center/contain no-repeat;
+    margin-left: 0.15em;        /* =25(margin по макету)/180(font-size) */
+}
+
+.join-us-form-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.join-us-form-subtitle {  
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.65;
+    text-transform: uppercase;
+    color: var(--color-white);
+}
+
+.join-us-form-body {
+    padding-block: 50px 150px;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.join-us-form-input {
+    max-width: 400px;
 }
